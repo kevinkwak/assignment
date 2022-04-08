@@ -1,0 +1,4 @@
+read_verilog proc_DSC.v
+hierarchy -top proc
+synth; abc -g NAND; opt
+write_verilog -noattr yosys.v
